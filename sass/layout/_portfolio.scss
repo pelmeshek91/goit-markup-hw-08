@@ -1,0 +1,82 @@
+.portfolio-nav-list {
+  @extend %list;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-nav-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-work-list {
+  @extend %list;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.portfolio-work-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+
+  background-color: var(--main-title-color);
+  border: 1px solid #eeeeee;
+  &:hover,
+  :focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+}
+.card-overlay {
+  @extend %link;
+}
+
+.card-text {
+  @include text(false, 18px, 1.56, 0.03em, false, false);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+
+  width: 100%;
+  height: 100%;
+
+  color: var(--main-title-color);
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(101%);
+  transition: transform var(--transition);
+
+  .card-overlay:hover & {
+    transform: translateY(0);
+  }
+}
+
+.portfolio-wrapper {
+  padding: 20px 24px;
+}
+
+.portfolio-work-name {
+  @include text(false, 18px, 2, 0.06em, false, false);
+
+  margin-bottom: 4px;
+  color: var(--secondary-title-color);
+}
+
+.portfolio-work-unit {
+  @include text(false, 16px, 1.87, false, false, false);
+
+  color: var(--main-text-color);
+  margin-bottom: 0;
+}

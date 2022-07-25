@@ -1,0 +1,27 @@
+.check-label {
+  display: flex;
+  align-items: center;
+}
+
+.icon-check {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .checkbox:checked + & {
+    background-color: var(--accent-color);
+    border: none;
+  }
+  .checkbox:focus + & {
+    border-color: var(--accent-color);
+  }
+}
+
+.checkbox {
+  appearance: none;
+  position: absolute;
+}

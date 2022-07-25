@@ -1,0 +1,28 @@
+.reason-list {
+  @extend %list;
+  @extend %card-set;
+}
+
+.reason-list__overlay {
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--accent-color-btn);
+  border-radius: 4px;
+}
+
+.reason-list__title {
+  @include text(false, 14px, false, false, false, uppercase);
+
+  color: var(--secondary-title-color);
+  margin-bottom: 10px;
+}
+
+.reason-list__description {
+  line-height: 1.71;
+  color: var(--main-text-color);
+}

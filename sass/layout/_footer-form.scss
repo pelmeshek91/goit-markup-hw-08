@@ -1,0 +1,35 @@
+.form__subtitle {
+  @include text(false, false, 1.14, false, false, uppercase);
+
+  color: var(--main-title-color);
+}
+
+.form__field {
+  display: flex;
+  margin-top: 20px;
+
+  align-items: center;
+}
+
+.form__input {
+  height: 50px;
+  width: 358px;
+  padding: 15px;
+  margin-right: 12px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  &::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

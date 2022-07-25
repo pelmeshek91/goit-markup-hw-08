@@ -1,0 +1,85 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  @extend %list;
+
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link {
+  @extend %link;
+
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-title-color);
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+  }
+  &.current {
+    color: var(--accent-color);
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+    }
+  }
+}
+
+.header-list {
+  @extend %list;
+
+  display: flex;
+  margin-left: auto;
+}
+
+.header-item:first-child {
+  margin-right: 50px;
+}
+
+.header-link {
+  @extend %link;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+  }
+}
+
+.contact-icon {
+  margin-right: 10px;
+  transition: var(--transition);
+  fill: var(--main-text-color);
+  .header-link:hover &,
+  .header-link:focus & {
+    fill: var(--accent-color);
+  }
+}

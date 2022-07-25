@@ -1,0 +1,28 @@
+.section__work {
+  padding-top: 0px;
+}
+.work-list {
+  @extend %list;
+  @extend %card-set;
+}
+.work-list__item {
+  position: relative;
+}
+
+.work-list__card {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work-list__text {
+  @include text(false, 14px, 1.14, false, center, uppercase);
+  color: var(--main-title-color);
+}
