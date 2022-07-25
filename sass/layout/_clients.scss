@@ -3,8 +3,14 @@
   @extend %card-set;
 }
 .clients-list__item {
-  width: 170px;
   height: 92px;
+  flex-basis: calc((100% - 30px) / 2);
+  @include mq(tab) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  @include mq(desk) {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients-list__link {

@@ -1,5 +1,9 @@
 .section__work {
   padding-top: 0px;
+  display: none;
+  @include mq(desk) {
+    display: block;
+  }
 }
 .work-list {
   @extend %list;

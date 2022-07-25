@@ -1,28 +1,39 @@
-// .reason-list {
-//   @extend %list;
-//   @extend %card-set;
-// }
+.reason-list {
+  @extend %list;
+  @extend %card-set;
+}
+.reason-list__item {
+  @include mq(tab) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @include mq(desk) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+.reason-list__overlay {
+  height: 120px;
 
-// .reason-list__overlay {
-//   height: 120px;
-//   width: 270px;
-//   margin-bottom: 30px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-//   background-color: var(--accent-color-btn);
-//   border-radius: 4px;
-// }
+  margin-bottom: 30px;
 
-// .reason-list__title {
-//   @include text(false, 14px, false, false, false, uppercase);
+  background-color: var(--accent-color-btn);
+  border-radius: 4px;
+}
 
-//   color: var(--secondary-title-color);
-//   margin-bottom: 10px;
-// }
+.reason-list__title {
+  @include text(false, 14px, 1.14, 0.03em, center, uppercase);
 
-// .reason-list__description {
-//   line-height: 1.71;
-//   color: var(--main-text-color);
-// }
+  color: var(--secondary-title-color);
+  margin-bottom: 10px;
+  @include mq(tab) {
+    text-align: left;
+  }
+}
+
+.reason-list__description {
+  line-height: 1.71;
+  color: var(--main-text-color);
+}
