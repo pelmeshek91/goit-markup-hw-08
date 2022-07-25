@@ -1,21 +1,20 @@
-.form__subtitle {
-  @include text(false, false, 1.14, false, false, uppercase);
-
-  color: var(--main-title-color);
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .form__field {
-  display: flex;
-  margin-top: 20px;
-
+  display: block;
+  justify-content: center;
   align-items: center;
 }
 
 .form__input {
+  // display: flex;
   height: 50px;
-  width: 358px;
+  width: 450px;
   padding: 15px;
-  margin-right: 12px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
 
@@ -24,6 +23,10 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
+  margin-bottom: 20px;
+  @include mq(desk) {
+    width: 358px;
+  }
   &::placeholder {
     font-size: 16px;
     line-height: calc(20 / 16);
