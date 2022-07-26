@@ -27,12 +27,13 @@
             <a href="./" class="logo"
               ><span class="logo__text">Web</span><span class="logo__text--dark">Studio</span></a
             >
+
             <ul class="nav-list">
               <li class="nav-item">
-                <a class="nav-link" href="./index.html">Студия</a>
+                <a class="nav-link current" href="./index.html">Студия</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+                <a class="nav-link" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="">Контакты</a>
@@ -56,6 +57,12 @@
             >
           </li>
         </ul>
+        <button class="button-menu" aria-label="menu button" type="button" data-menu-button>
+          <svg class="icon-modal" width="40" height="40">
+            <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Основной текст -->
@@ -85,7 +92,6 @@
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
                   <img
-                    class="no-gap"
                     src="./images/portfolio/project1.jpg"
                     alt="на ноутбуке изображен веб-сайт"
                     width="370"
@@ -107,7 +113,6 @@
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
                   <img
-                    class="no-gap"
                     src="./images/portfolio/project2.jpg"
                     alt="2 баскетболиста с мячом"
                     width="370"
@@ -131,7 +136,6 @@
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
                   <img
-                    class="no-gap"
                     src="./images/portfolio/project3.jpg"
                     alt="логотип ресторана на фоне рыбы"
                     width="370"
@@ -154,7 +158,6 @@
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
                   <img
-                    class="no-gap"
                     src="./images/portfolio/project4.jpg"
                     alt="беспроводные наушники"
                     width="370"
@@ -177,7 +180,6 @@
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
                   <img
-                    class="no-gap"
                     src="./images/portfolio/project5.jpg"
                     alt="2 коробки разного цвета"
                     width="370"
@@ -199,12 +201,7 @@
             <li class="portfolio-work-item">
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
-                  <img
-                    class="no-gap"
-                    src="./images/portfolio/project6.jpg"
-                    alt="аймак"
-                    width="370"
-                  />
+                  <img src="./images/portfolio/project6.jpg" alt="аймак" width="370" />
                   <p class="card-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -224,12 +221,7 @@
             <li class="portfolio-work-item">
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
-                  <img
-                    class="no-gap"
-                    src="./images/portfolio/project7.jpg"
-                    alt="развернутая книга"
-                    width="370"
-                  />
+                  <img src="./images/portfolio/project7.jpg" alt="развернутая книга" width="370" />
                   <p class="card-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -250,7 +242,6 @@
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
                   <img
-                    class="no-gap"
                     src="./images/portfolio/project8.jpg"
                     alt="табличка с надписью"
                     width="370"
@@ -273,7 +264,6 @@
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
                   <img
-                    class="no-gap"
                     src="./images/portfolio/project9.jpg"
                     alt="человек печатает на ноутбуке"
                     width="370"
@@ -318,7 +308,7 @@
           </address>
         </div>
         <div class="footer__social">
-          <h3 class="footer__title">присоединяйтесь</h3>
+          <h3 class="footer__subtitle">присоединяйтесь</h3>
           <ul class="socials">
             <li class="socials__item">
               <a href="" class="socials__link socials__link--dark">
@@ -351,7 +341,7 @@
           </ul>
         </div>
         <form action="#" class="form">
-          <b class="form__subtitle">Подпишитесь на рассылку</b>
+          <h3 class="footer__subtitle">Подпишитесь на рассылку</h3>
           <div class="form__field">
             <input class="form__input" type="email" name="email" placeholder="E-mail" />
             <button class="btn btn__form" type="submit">

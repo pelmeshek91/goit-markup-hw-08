@@ -1,7 +1,11 @@
 .logo {
   @extend %link;
-  @include text(700, 26px, 1.19, false, false, false);
+  @include text(700, 24px, 1.19, false, false, false);
   font-family: 'Raleway';
+
+  @include mq(desk) {
+    font-size: 26px;
+  }
 }
 
 .logo__text {

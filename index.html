@@ -20,13 +20,14 @@
 
   <body>
     <!-- Шапка -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container nav">
         <nav class="header-nav">
           <div class="nav">
             <a href="./" class="logo"
               ><span class="logo__text">Web</span><span class="logo__text--dark">Studio</span></a
             >
+
             <ul class="nav-list">
               <li class="nav-item">
                 <a class="nav-link current" href="./index.html">Студия</a>
@@ -56,8 +57,14 @@
             >
           </li>
         </ul>
+        <button class="button-menu" aria-label="menu button" type="button" data-menu-button>
+          <svg class="icon-modal" width="40" height="40">
+            <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <!---------------------------------- MAIN TEXT --------------------------------->
     <main>
       <section class="hero">
@@ -134,23 +141,29 @@
               <div class="work-list__card">
                 <h3 class="work-list__text">Десктопные приложения</h3>
               </div>
-              <img
-                src="./images/box/box1.jpg"
-                alt="человек печатает на клавиатуре код"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/box/box1.jpg 1x, ./images/box/box1-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/box/box1.jpg"
+                  alt="человек печатает на клавиатуре код"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </li>
             <li class="work-list__item">
               <div class="work-list__card">
                 <h3 class="work-list__text">Мобильные приложения</h3>
               </div>
-              <img
-                src="./images/box/box2.jpg"
-                alt="разработка дизайна для мобильного приложения"
-                width="370"
-                height="294"
-              />
+              picture>
+          <source srcset="
+                    ./images/box/box2.jpg    1x,
+                    ./images/box/box2-2x.jpg 2x " media="(min-width:1200px)" />
+            <img class="no-gap" src="./images/box/box2.jpg" alt="человек печатает на клавиатуре код" width="370" height="294" />
+        </picture>
             </li>
             <li class="work-list__item">
               <div class="work-list__card">
@@ -482,6 +495,45 @@
           </form>
         </div>
       </footer>
+      <!------------------------ MOBILE-MENU ----------------------->
+      <div class="backdrop is-hidden" data-menu>
+        <div class="menu">
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link current" href="./index.html">Студия</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="menu-contact">
+            <li class="menu-contact__item">
+              <a class="menu-contact__link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="menu-contact__item">
+              <a class="menu-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="menu-social">
+            <li class="menu-social__list">
+              <a class="menu-social__link" href="">Instagram</a>
+            </li>
+            <li class="menu-social__list">
+              <a class="menu-social__link" href="">Twitter</a>
+            </li>
+            <li class="menu-social__list">
+              <a class="menu-social__link" href="">Facebook</a>
+            </li>
+            <li class="menu-social__list">
+              <a class="menu-social__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <!----------------------- MODAL WINDOW ------------------------->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -548,6 +600,7 @@
         </div>
       </div>
     </main>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

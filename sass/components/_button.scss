@@ -2,6 +2,7 @@ button {
   cursor: pointer;
   border: 1px solid transparent;
 }
+
 .btn {
   @include text(700, 16px, 1.87, 0.06em, center, false);
 
@@ -39,35 +40,4 @@ button {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
-}
-
-.btn-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-
-  outline: none;
-  background-color: unset;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: fill var(--transition);
-  &:focus,
-  :hover {
-    fill: var(--accent-color);
-  }
-}
-
-.modal-button {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  outline: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

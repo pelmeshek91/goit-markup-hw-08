@@ -3,6 +3,9 @@
   padding-bottom: 60px;
   padding-top: 60px;
   text-align: center;
+  @include mq(desk) {
+    text-align: left;
+  }
 }
 
 .footer__overlay {
@@ -56,4 +59,7 @@
 
   color: var(--main-title-color);
   margin-bottom: 20px;
+  @include mq(desk) {
+    text-align: left;
+  }
 }
