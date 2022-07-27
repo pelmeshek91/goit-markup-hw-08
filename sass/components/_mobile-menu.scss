@@ -54,6 +54,9 @@
 }
 .menu-list__item,
 .menu-contact__item {
+  & :hover {
+    color: var(--accent-color);
+  }
   &:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -62,6 +65,7 @@
   @extend %link;
 
   @include text(500, 40px, 1.17, 0.02em, center, false);
+
   &:focus {
     color: var(--accent-color);
   }
@@ -76,6 +80,7 @@
 
   @include text(500, 24px, 1.16, 0.02em, false, false);
   color: #757575;
+
   &:focus {
     color: var(--accent-color);
   }

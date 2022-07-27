@@ -77,13 +77,12 @@
 
   align-items: center;
   justify-content: center;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include text(500, 12px, 1.14, 0.02em, false, false);
   color: var(--main-text-color);
 
   @include mq(desk) {
     display: flex;
+    font-size: 14px;
   }
 
   &:hover,

@@ -30,10 +30,10 @@
 
             <ul class="nav-list">
               <li class="nav-item">
-                <a class="nav-link current" href="./index.html">Студия</a>
+                <a class="nav-link" href="./index.html">Студия</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./portfolio.html">Портфолио</a>
+                <a class="nav-link current" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="">Контакты</a>
@@ -91,11 +91,41 @@
             <li class="portfolio-work-item">
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio/project1.jpg"
-                    alt="на ноутбуке изображен веб-сайт"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/project1-desk.jpg    1x,
+                        ./images/portfolio/project1-desk-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/project1-tab.jpg    1x,
+                        ./images/portfolio/project1-tab-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/project1-mob.jpg    1x,
+                        ./images/portfolio/project1@2x-mob.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/project1-mob.jpg"
+                      alt="project 1"
+                      width="450"
+                      height="440"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="card-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -112,11 +142,41 @@
             <li class="portfolio-work-item">
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio/project2.jpg"
-                    alt="2 баскетболиста с мячом"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/project2-desk.jpg    1x,
+                        ./images/portfolio/project2-desk-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/project2-tab.jpg    1x,
+                        ./images/portfolio/project2-tab-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/project2-mob.jpg    1x,
+                        ./images/portfolio/project2@2x-mob.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/project2-mob.jpg"
+                      alt="project 2"
+                      width="450"
+                      height="440"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="card-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -135,11 +195,41 @@
             <li class="portfolio-work-item">
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio/project3.jpg"
-                    alt="логотип ресторана на фоне рыбы"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/project3-desk.jpg    1x,
+                        ./images/portfolio/project3-desk-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/project3-tab.jpg    1x,
+                        ./images/portfolio/project3-tab-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/project3-mob.jpg    1x,
+                        ./images/portfolio/project3@2x-mob.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/project3-mob.jpg"
+                      alt="project 3"
+                      width="450"
+                      height="440"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="card-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -157,11 +247,41 @@
             <li class="portfolio-work-item">
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio/project4.jpg"
-                    alt="беспроводные наушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/project4-desk.jpg    1x,
+                        ./images/portfolio/project4-desk-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/project4-tab.jpg    1x,
+                        ./images/portfolio/project4-tab-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/project4-mob.jpg    1x,
+                        ./images/portfolio/project4@2x-mob.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/project4-mob.jpg"
+                      alt="project 4"
+                      width="450"
+                      height="440"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="card-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -179,11 +299,41 @@
             <li class="portfolio-work-item">
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio/project5.jpg"
-                    alt="2 коробки разного цвета"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/project5-desk.jpg    1x,
+                        ./images/portfolio/project5-desk-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/project5-tab.jpg    1x,
+                        ./images/portfolio/project5-tab-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/project5-mob.jpg    1x,
+                        ./images/portfolio/project5@2x-mob.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/project5-mob.jpg"
+                      alt="project 5"
+                      width="450"
+                      height="440"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="card-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -201,7 +351,41 @@
             <li class="portfolio-work-item">
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
-                  <img src="./images/portfolio/project6.jpg" alt="аймак" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/project6-desk.jpg    1x,
+                        ./images/portfolio/project6-desk-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/project6-tab.jpg    1x,
+                        ./images/portfolio/project6-tab-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/project6-mob.jpg    1x,
+                        ./images/portfolio/project6@2x-mob.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/project6-mob.jpg"
+                      alt="project 6"
+                      width="450"
+                      height="440"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="card-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -221,7 +405,41 @@
             <li class="portfolio-work-item">
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
-                  <img src="./images/portfolio/project7.jpg" alt="развернутая книга" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/project7-desk.jpg    1x,
+                        ./images/portfolio/project7-desk-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/project7-tab.jpg    1x,
+                        ./images/portfolio/project7-tab-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/project7-mob.jpg    1x,
+                        ./images/portfolio/project7@2x-mob.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/project7-mob.jpg"
+                      alt="project 7"
+                      width="450"
+                      height="440"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="card-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -241,11 +459,41 @@
             <li class="portfolio-work-item">
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio/project8.jpg"
-                    alt="табличка с надписью"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/project8-desk.jpg    1x,
+                        ./images/portfolio/project8-desk-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/project8-tab.jpg    1x,
+                        ./images/portfolio/project8-tab-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/project8-mob.jpg    1x,
+                        ./images/portfolio/project8@2x-mob.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/project8-mob.jpg"
+                      alt="project 8"
+                      width="450"
+                      height="440"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="card-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -263,11 +511,41 @@
             <li class="portfolio-work-item">
               <a href="" class="card-overlay">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio/project9.jpg"
-                    alt="человек печатает на ноутбуке"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/project9-desk.jpg    1x,
+                        ./images/portfolio/project9-desk-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/project9-tab.jpg    1x,
+                        ./images/portfolio/project9-tab-2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/project9-mob.jpg    1x,
+                        ./images/portfolio/project9@2x-mob.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/project9-mob.jpg"
+                      alt="project 9"
+                      width="450"
+                      height="440"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="card-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -285,6 +563,46 @@
         </div>
       </section>
     </main>
+    <!------------------------------- MOBILE-MENU ------------------------------------>
+    <div class="backdrop is-hidden" data-menu>
+      <div class="menu">
+        <ul class="menu-list">
+          <li class="menu-list__item">
+            <a class="menu-list__link current" href="./index.html">Студия</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="menu-contact">
+          <li class="menu-contact__item">
+            <a class="menu-contact__link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="menu-contact__item">
+            <a class="menu-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="menu-social">
+          <li class="menu-social__list">
+            <a class="menu-social__link" href="">Instagram</a>
+          </li>
+          <li class="menu-social__list">
+            <a class="menu-social__link" href="">Twitter</a>
+          </li>
+          <li class="menu-social__list">
+            <a class="menu-social__link" href="">Facebook</a>
+          </li>
+          <li class="menu-social__list">
+            <a class="menu-social__link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-------------------------------- FOOTER ------------------------------------------>
     <footer class="footer">
       <div class="container footer__overlay">
         <div class="footer__contact">
@@ -354,5 +672,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

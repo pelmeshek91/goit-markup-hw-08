@@ -199,8 +199,11 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: 500;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-align: false;
+  text-transform: false;
   color: var(--main-text-color);
 }
 @media screen and (min-width: 1200px) {
@@ -208,6 +211,7 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-size: 14px;
   }
 }
 .header-link:hover,
@@ -588,9 +592,54 @@ p {
   row-gap: 15px;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-nav-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .portfolio-nav-item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-work-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.portfolio-work-item {
+  background-color: var(--main-title-color);
+  border: 1px solid #eeeeee;
+}
+@media screen and (max-width: 767.98px) {
+  .portfolio-work-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-work-item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-work-item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
+  }
+}
+.portfolio-work-item:hover,
+.portfolio-work-item :focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-card {
@@ -894,6 +943,10 @@ p {
   margin-bottom: auto;
 }
 
+.menu-list__item :hover,
+.menu-contact__item :hover {
+  color: var(--accent-color);
+}
 .menu-list__item:not(:last-child),
 .menu-contact__item:not(:last-child) {
   margin-bottom: 32px;
